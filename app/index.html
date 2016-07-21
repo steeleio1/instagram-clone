@@ -7,10 +7,39 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-    <div class="container">
-      <p>Welcome to your life.</p>
+
+
+  <body ng-app="app">
+    <div class="MainBox" ng-controller="MainController">
+      <p>{{ hello }}</p>
+
+      <nav>
+        <a href="/#/">Home</a> |
+        <a href="/#/about">About Photo</a> |
+        <a href="/#/add">Add Photo</a>
+      </nav>
+
+    <form ng-controller="UploadController" ng-submit="uploadPhoto(photo)">
+      <p class="nameText">
+        <input type="text" class="input" placeholder="Photo Name" ng-model="photo.name">
+      </p>
+
+        <p class="photoBox">
+        <input type="text" class="input" placeholder="Photo Upload" ng-model="photo.pic">
+      </p>
+
+        <p class="descText">
+        <input type="text" class="input" placeholder="Photo Description" ng-model="photo.desc">
+      </p>
+
+      <button class="button">Add Photo</button>
+    </form>
+
+
     </div>
+
+
+
     <script src="js/bundle.js"></script>
   </body>
 </html>

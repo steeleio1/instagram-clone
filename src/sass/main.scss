@@ -1,0 +1,12 @@
+.MainBox {
+	border: solid black 5px;
+	display: flex;
+	flex-direction: column;
+	// height: 90vh;
+	width: 90vw;
+	margin: 25px auto;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5px;
+	// background: rgba(242, 242, 242, 0.5);
+}
