@@ -48,7 +48,7 @@ a:hover {
 	text-decoration: none;
 	color: $red;
 	// text-decoration: underline;
-	font-size: 1.2em;
+	font-size: 1.15em;
 	transition:All 0.5s ease;
 }
 
@@ -64,13 +64,14 @@ a:hover {
 	// width: 85vw;
 	align-items: center;
 }
-
+ 
 .picsBoxes {
-	border: solid orange 1px;
-	// height: 200px;
-	// width: 300px;
+	// border: solid orange 1px;
+	height: 200px;
+	width: 300px;
 	// min-width: 5vw;
 	margin: 5px auto;
+	box-shadow: 1px 1px 3px 0px rgba(194, 194, 194, 0.57);
 }
 
 .picsWrapper .picsBoxes img {
@@ -112,12 +113,13 @@ a:hover {
 
 .fa {
 	color: white;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 .fa:hover{
 	color: white;
-	font-size: 2.063em;
+	font-size: 1.6em;
+	transition:All 0.5s ease-in-out;
 }
 
 // ========= About Page ================
@@ -203,10 +205,6 @@ input {
 	justify-content: center;
 	width: 50vw;
 }
-
-
-
-
 
 
 
