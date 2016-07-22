@@ -4,7 +4,7 @@ import 'angular-ui-router';
 console.log (angular);
 
 // controller
-import { MainController } from './controllers/main.controller';
+import { DownLoadPicController } from './controllers/downloadPic.controller';
 import { UploadController} from "./controllers/upload.controller"
 
 // config
@@ -16,5 +16,5 @@ angular
   .module('app', ['ui.router'])
   .config(config)
   .constant('SERVER', serverLink)
-  .controller("MainController" , MainController)
+  .controller("DownLoadPicController" , DownLoadPicController)
   .controller('UploadController', UploadController);
