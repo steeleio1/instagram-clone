@@ -1,6 +1,11 @@
-<div>
-  <div ng-repeat="p in photos">
-    <h4>{{ p.name }}</h4>
-    <img ng-src="{{ p.url }}" alt="{{ p.name }}">
+<div class="picsWrapper">
+  <div ng-repeat="p in photos" class="picsBoxes">
+    
+    <a href="/#/about/{{ p._id }}">
+    	<img ng-src="{{ p.pic }}" alt="{{ p.name }}">
+    </a>
+
   </div>
 </div>
+
+

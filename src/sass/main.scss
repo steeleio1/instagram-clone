@@ -1,6 +1,8 @@
 $red: #C1000B;
 
-
+html {
+  font-size: 62.5%;
+}
 
 .HomePageBox {
 	// border: solid black 5px;
@@ -33,7 +35,7 @@ $red: #C1000B;
 .navWrapper {
 	display: flex;
 	display: nowrap;
-	font-size: 1.1em;
+	font-size: 2em;
 }
 
 a {
@@ -53,7 +55,7 @@ a:hover {
 }
 
 .picsWrapper {
-	border: solid red 1px;
+	// border: solid red 1px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -67,12 +69,19 @@ a:hover {
  
 .picsBoxes {
 	// border: solid orange 1px;
+	position: relative;
 	height: 200px;
 	width: 300px;
 	// min-width: 5vw;
 	margin: 5px auto;
-	box-shadow: 1px 1px 3px 0px rgba(194, 194, 194, 0.57);
+	box-shadow: 2px 2px 3px 0px rgba(194, 194, 194, 0.57);
 }
+
+// .picsBoxes:hover {
+// 		position: absolute;
+// 		left: 100px;
+//     	top: 150px;
+// 	}
 
 .picsWrapper .picsBoxes img {
 	width: 100%;
@@ -82,10 +91,10 @@ a:hover {
 	// border: solid orange 1px;
 	display: flex;
 	flex-direction: row;
-	height: 5vh;
+	height: 8vh;
 	width: 90vw;
 	align-self: end;
-	margin-top: 10px;
+	margin-top: 50px;
 	background: black;
 	color: white;
 	align-items: center;
@@ -94,37 +103,41 @@ a:hover {
 }
 
 .copyright {
-	// border: solid orange 1px;
-	width: 30vh;
+	display: flex;
+	border: solid orange 1px;
+	height: 8vh;
+	width: 20vw;
 	// align-self: flex-start;
 	display: nowrap;
 	align-items: center;
-	font-size: 0.5em;
+	font-size: 1em;
 }
 
 .social {
 	display:flex;
 	// border: solid orange 1px;
-	width: 25vh;
+	height: 8vh;
+	width: 30vw;
 	align-items: center;
-	// align-self: flex-end;
-	justify-content: space-around;
+	justify-content: center;
+		font-size: 2.4em;
 }
 
 .fa {
 	color: white;
-	font-size: 1.5em;
+	margin-right: 1vw;
+
 }
 
 .fa:hover{
-	color: white;
-	font-size: 1.6em;
-	transition:All 0.5s ease-in-out;
+	color: $red;
+	font-size: 2.6em;
+	transition:All 0.3s ease-in-out;
 }
 
 // ========= About Page ================
 .AboutPageBox {
-	border: solid black 5px;
+	// border: solid black 5px;
 	display: flex;
 	flex-direction: column;	
 	align-items: center;
@@ -133,72 +146,137 @@ a:hover {
 }
 
 .contentsWrapper1 {
-	border: solid red 1px;
+	// border: solid red 1px;
 	display: flex;
-	flex-direction: row;	
+	justify-content: center;	
 	align-items: center;
 	width: 90vw;
 }
 
 .picBox {
-	border: solid orange 1px;
+	// border: solid orange 1px;
 	// display: flex;
 	// flex-direction: row;	
 	align-items: center;
 	height: 40vh;
 	width: 50vw;
+}
 
+.picBox img {
+	width: 100%;
 }
 
 .nameDescWrapper {
-	border: solid orange 1px;
-	// display: flex;
-	// flex-direction: row;	
+	// border: solid orange 1px;
+	display: flex;
+	flex-direction: column;	
 	align-items: center;
 	height: 40vh;
 	width: 50vw;
+	margin-left:15px;
 }
 
 .name {
-	border: solid yellow 1px;
+	display: flex;
+	// border: solid yellow 1px;
 	width: 50vw;
 	font-size: 1.4em;
+	align-items: center;
+	justify-content: center;
+
 }
 
 .desc {
-	border: solid yellow 1px;
+	// border: solid yellow 1px;
+	display: flex;
 	width: 50vw;
 	margin-top: 10px;
 	font-size: 1.1em;
+	justify-content: center;
+
 }
+
+ @media screen and (max-width: 768px) {
+	 .desc {
+	 	overflow: scroll;
+	 }
+ }
 
 
 // =========== Add Page ==============
-.AddPageBox {
-	border: solid black 5px;
-	display: flex;
-	flex-direction: column;
-	// height: 90vh;
-	width: 90vw;
-	margin: 25px auto;
-	align-items: center;
-}
+// .AddPageBox {
+// 	// border: solid black 5px;
+// 	display: flex;
+// 	flex-direction: column;
+// 	// height: 90vh;
+// 	width: 90vw;
+// 	margin: 25px auto;
+// 	align-items: center;
+// }
 
 .contentsWrapper2 {
-	border: solid red 1px;
+	// border: solid red 1px;
 	margin-top: 3vh;
+	margin-bottom: 3vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 }
+
 
 input {
-	// border: solid orange 1px;
-	width: 50vw;
-	margin: 1vh;
-}
+   height: 5vh;
+   width: 50vw;
+   margin: 1vh;
+   border: outset 1px #F2F2F5;
+   padding: 1px;
+   border-radius: 5px;
+   box-shadow: 0px 1px 10px 2px rgba(156, 156, 156, 0.07);
+   background-color: #FFFFFF;
+   background-image: url(http://);
+   background-position: 0px 0px;
+   background-repeat: no-repeat;
+   outline: none;
+   color: #000000;
+   font-size: 1.4em;
+  }
+input:hover  {
+   border: 2px outset #949494;
+  }
+input:focus  {
+   border: solid 2px #8F1340;
+   box-shadow: inset 0px 1px 2px 0px #C1000B;
+  }
+input:active  {
+   border: outset 2px #000000;
+  }
 
+textarea {
+   height: 10vh;
+   width: 50vw;
+   margin: 1vh;
+   border: outset 1px #F2F2F5;
+   padding: 1px;
+   border-radius: 5px;
+   box-shadow: 0px 1px 10px 2px rgba(156, 156, 156, 0.07);
+   background-color: #FFFFFF;
+   background-image: url(http://);
+   background-position: 0px 0px;
+   background-repeat: no-repeat;
+   outline: none;
+   color: #000000;
+   font-size: 1.4em;
+  }
+textarea:hover  {
+   border: 2px outset #949494;
+  }
+textarea:focus  {
+   border: solid 2px #8F1340;
+   box-shadow: inset 0px 1px 2px 0px #C1000B;
+  }
+textarea:active  {
+   border: outset 2px #000000;
+  }
 .buttonBox {
 	// border: solid orange 1px;
 	display: flex;

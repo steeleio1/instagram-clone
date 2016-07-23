@@ -1,0 +1,17 @@
+<div class="AboutPageBox">
+
+      <div class="contentsWrapper1">
+         <div class="picBox">
+              <img ng-src="{{ singlePhoto.pic }}" 
+                   alt="{{ singlePhoto.name }}">
+                    <button ng-click="deleteMe(singlePhoto)" 
+                            name="button" 
+                            class=>Delete
+                    </button>
+              </div>
+         <div class="nameDescWrapper">
+            <div class="name">{{ singlePhoto.name }}</div>
+            <div class="desc">{{ singlePhoto.desc}}</div>
+         </div> 
+      </div>
+</div>

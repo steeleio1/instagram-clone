@@ -7,26 +7,27 @@ function config ($stateProvider, $urlRouterProvider) {
     .state('root', {
       abstract: true,
       templateUrl: 'templates/layout.tpl.html'
-    });
+    })
 
 
 // changes out pages
-    // .state('root.home', {
-    //   url: '/',
-    //   templateUrl: 'templates/home.tpl.html',
-    //   controller: 'HomeController'
-    // })
+    .state('root.home', {
+      url: '/',
+      templateUrl: 'templates/home.tpl.html',
+      controller: 'DownloadPicController'
+    })
 
-    // .state('about', {
-    //   url: '/about',
-    //   // templateUrl: 'templates/about.tpl.html'
-    // })
+    .state('root.about', {
+      url: '/about/:id',
+      templateUrl: 'templates/about.tpl.html',
+      controller: "SingleImgController"
+    })
 
-    // .state('add', {
-    //   url: '/add',
-    //   // templateUrl: 'templates/add.tpl.html',
-    //   // controller: 'AddController'
-    // });
+    .state('root.add', {
+      url: '/add',
+      templateUrl: 'templates/add.tpl.html',
+      controller: 'UploadController'
+    });
 
   $urlRouterProvider.otherwise('/');
 

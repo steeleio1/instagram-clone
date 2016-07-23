@@ -4,9 +4,10 @@ import 'angular-ui-router';
 console.log (angular);
 
 // controller
-import { DownLoadPicController } from './controllers/downloadPic.controller';
-import { UploadController} from "./controllers/upload.controller"
-
+import { DownloadPicController } from './controllers/downloadPic.controller';
+import { UploadController} from "./controllers/upload.controller";
+import { LikesController } from "./controllers/likes.controller";
+import { SingleImgController } from "./controllers/single.img.controller"
 // config
 import { config } from "./config";
 
@@ -16,5 +17,6 @@ angular
   .module('app', ['ui.router'])
   .config(config)
   .constant('SERVER', serverLink)
-  .controller("DownLoadPicController" , DownLoadPicController)
-  .controller('UploadController', UploadController);
+  .controller("DownloadPicController" , DownloadPicController)
+  .controller('UploadController', UploadController)
+  .controller("SingleImgController", SingleImgController);

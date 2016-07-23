@@ -1,18 +1,35 @@
-    
 
-    <form  ng-submit="uploadPhoto(photo)">
-        <div class="nameText">
-          <input type="text" class="input" placeholder="Photo Name" ng-model="photo.name">
-        </div>
 
-        <div class="photoBox">
-          <input type="text" class="input" placeholder="Photo Upload" ng-model="photo.pic">
-        </div>
+  <div class="contentsWrapper2">
+      <form  ng-submit="uploadPhoto(photo)">
 
-        <div class="descText">
-          <input type="text" class="input" placeholder="Photo Description" ng-model="photo.desc">
-        </div>
+          <div>
+             <input type="text" 
+                    class="nameText" 
+                    placeholder="Photo Name" 
+                    ng-model="photo.name"
+                    required>
+          </div>
 
-      <button class="button">Add Photo</button>
+          <div>
+             <input type="text" 
+                    class="photoBox" 
+                    placeholder="Photo Upload" 
+                    ng-model="photo.pic"
+                    required>
+          </div>
 
-    </form>
+          <div>
+             <textarea type="text" 
+                      class="descText" 
+                      placeholder="Photo Description" ng-model="photo.desc"
+                      required>
+             </textarea>
+          </div>
+
+            <div class="buttonBox"> 
+            <button class="button">Add Photo</button>
+            </div>
+
+      </form>
+  </div>

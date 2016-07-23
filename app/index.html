@@ -14,131 +14,43 @@
 
     <div class="HomePageBox" ui-view>
 
-      <div class="logoWrapper">
-        <div class="logoPic">
-          <img src="./images/LogoMakr.png">
+
+
+<!--         <div class="picsWrapper">
+              <div class="picsBoxes">
+                 <img src="http://www.placebacon.net/300/200" alt="Bacn">
+              </div>
+            
+              <div class="picsBoxes">
+                 <img src="http://www.placebacon.net/300/200" alt="Bacn">
+              </div>
+
+              <div class="picsBoxes">
+                 <img src="http://www.placecage.com/300/200" alt="Bacn">
+              </div>
+
+              <div class="picsBoxes">
+                 <img src="http://www.placebacon.net/300/200" alt="Bacn">
+              </div>  
+
+              <div class="picsBoxes">
+                 <img src="http://www.fillmurray.com/300/200" alt="Bacn">
+              </div>
+
+              <div class="picsBoxes">
+                 <img src="http://www.placebacon.net/300/200" alt="Bacn">
+              </div> 
+               <! <button class="likeButton" ng-click ="addLikes()">{{clicks}} {{likes}} Likes</button>  -->
+
         </div>
+ 
+ 
 
-      </div>
-
-      <div class="navWrapper">
-        <nav>
-          <a href="/#/">Home</a> 
-          <a href="/#/about">About Photo</a> 
-          <a href="/#/add">Add Photo</a>
-        </nav>
-      </div>
-
-      <div class="picsWrapper">
-
-            <div class="picsBoxes">
-               <img src="http://www.placebacon.net/300/200" alt="Bacn">
-            </div>
-          
-            <div class="picsBoxes">
-               <img src="http://www.placebacon.net/300/200" alt="Bacn">
-            </div>
-
-            <div class="picsBoxes">
-               <img src="http://www.placecage.com/300/200" alt="Bacn">
-            </div>
-
-            <div class="picsBoxes">
-               <img src="http://www.placebacon.net/300/200" alt="Bacn">
-            </div>  
-
-            <div class="picsBoxes">
-               <img src="http://www.fillmurray.com/300/200" alt="Bacn">
-            </div>
-
-            <div class="picsBoxes">
-               <img src="http://www.placebacon.net/300/200" alt="Bacn">
-            </div>  
+  
 
 
-      </div>
 
-      <div class="footerBox">
-          <div class="copyright">
-            <p>© All rights reserved by steeleio</p>
-          </div>
-          <div class="social">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-share-square" aria-hidden="true"></i>
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-          </div>
-      </div>
 
-<!--       <p>{{ hello }}</p> -->
-
-    </div>
-
-    <div class="AboutPageBox">
-
-        <div class="logoWrapper">
-          <p>LOGO</p></div>
-         <div class="navWrapper">
-            <nav>
-              <a href="/#/">Home</a> |
-              <a href="/#/about">About Photo</a> |
-              <a href="/#/add">Add Photo</a>
-            </nav>
-          </div>
-
-          <div class="contentsWrapper1">
-             <div class="picBox">
-                  <p>PIC</p></div>
-             <div class="nameDescWrapper">
-                <div class="name">Name</div>
-                <div class="desc">Desc</div>
-             </div> 
-          </div>
-    </div>
-
-    <div class="AddPageBox">
-        <div class="logoWrapper">
-          <p>LOGO</p></div>
-         <div class="navWrapper">
-            <nav>
-              <a href="/#/">Home</a> |
-              <a href="/#/about">About Photo</a> |
-              <a href="/#/add">Add Photo</a>
-            </nav>
-          </div>
-
-        <div class="contentsWrapper2">
-            <form  ng-submit="uploadPhoto(photo)">
-
-                <div>
-                 <input type="text" 
-                        class="nameText" 
-                        placeholder="Photo Name" 
-                        ng-model="photo.name"
-                        required>
-                </div>
-
-                <div>
-                 <input type="text" 
-                        class="photoBox" 
-                        placeholder="Photo Upload" 
-                        ng-model="photo.pic"
-                        required>
-                </div>
-
-                <div>
-                 <input type="text" 
-                        class="descText" 
-                        placeholder="Photo Description" ng-model="photo.desc"
-                        required>
-                </div>
-
-                  <div class="buttonBox"> <button class="button">Add Photo</button></div>
-            </form>
-        </div>
-
-    </div>
     
 
 <!-- ======================= -->
