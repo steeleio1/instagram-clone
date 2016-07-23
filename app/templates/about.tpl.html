@@ -4,6 +4,9 @@
          <div class="picBox">
               <img ng-src="{{ singlePhoto.pic }}" 
                    alt="{{ singlePhoto.name }}">
+                   <button ng-click="uploadPhoto" >{{ singlePhoto.likes }} Likes
+                   </button>
+
                     <button ng-click="deleteMe(singlePhoto)" 
                             name="button" 
                             class=>Delete
@@ -11,6 +14,7 @@
               </div>
          <div class="nameDescWrapper">
             <div class="name">{{ singlePhoto.name }}</div>
+            <hr>
             <div class="desc">{{ singlePhoto.desc}}</div>
          </div> 
       </div>
