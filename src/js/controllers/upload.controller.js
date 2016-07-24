@@ -4,7 +4,6 @@ function UploadController ($scope, $http, SERVER, $state) {
 
   $scope.uploadPhoto = (photo) => {
   	photo.likes = 0;
-  	photo.likes++;
     $http.post(SERVER.URL, photo).then( (res) => {
     	// back to homepage in browser
       $state.go('root.home');

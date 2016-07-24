@@ -2,6 +2,7 @@
 function SingleImgController ($scope, $stateParams, $http, SERVER, $state) {
 
   $scope.singlePhoto = {};
+  $scope.likeText ="Likes"
 
 
   init();
@@ -18,6 +19,20 @@ function SingleImgController ($scope, $stateParams, $http, SERVER, $state) {
       $state.go('root.home')
       });
   };
+
+
+$scope.likeMe = function (singlePhoto) {
+  singlePhoto.likes ++;
+    if (singlePhoto.likes === 1){
+      $scope.likeText = "like"
+    } else {
+      $scope.likeText = "likes"
+    }
+
+  $http.put(SERVER.URL + singlePhoto._id, singlePhoto).then((res) => {
+  })
+}
+
 
 }
 
