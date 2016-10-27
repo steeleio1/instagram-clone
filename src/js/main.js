@@ -20,3 +20,5 @@ angular
   .controller("DownloadPicController" , DownloadPicController)
   .controller('UploadController', UploadController)
   .controller("SingleImgController", SingleImgController);
+
+  
