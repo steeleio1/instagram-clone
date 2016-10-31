@@ -4,7 +4,8 @@
 
 Instagram-Clone is a web app that allows the user to upload a picture to be viewed on the landing page. The user can then click on the picture to get a more detailed view.
 
-
+##Live on the webisphere
+[live url](http://tiy-jasonsteele-instagram-clone.surge.sh)
 
 ## Built With
 
@@ -18,11 +19,4 @@ Instagram-Clone is a web app that allows the user to upload a picture to be view
 
 
 
-## Getting Started
-
-
-
-=======
-find me live:
-[live url](http://tiy-jasonsteele-instagram-clone.surge.sh)
 
